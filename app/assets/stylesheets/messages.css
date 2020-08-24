@@ -42,18 +42,90 @@
 .main-chat{
   width: calc(100vw - 300px);
   background-color: #ffffff;
-  padding: 0, 40px, 0;
 }
 .top-main{
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
 }
+.main-room-name a{
+  font-size: 24px;
+  color: #333;
+}
+.exit-btn a{
+  color: darkred;
+  border: 1px solid darkred;
+  padding: 20px;
+  text-decoration: none;
+}
+
 .chat{
   background-color: #fafafa;
   height: calc(100vh - 190px);
-  padding-top: 46px;
+  padding: 46px 20px 0 20px;
+  overflow: scroll;
 }
+.a-chat{
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+.name_date{
+  display: flex;
+}
+.name{
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+}
+.date{
+  font-size: 12px;
+  color: #999;
+}
+.message{
+  font-size: 14px;
+  color: #434a54;
+}
+
 .bottom-main{
   background-color: #DDDDDD;
   height: 90px;
-  padding: 20px, 0;
+  padding: 20px 40px;
+}
+.form{
+  display: flex;
+}
+.form2{
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+.b-message{
+  height: 50px;
+  padding-left: 10px;
+  border: none;
+  width: calc(100% - 60px);
+}
+.image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden{   
+  display: none;
+}
+.send-btn{
+  font-size: 16px;
+  color: white;
+  background-color: #38aef0;
+  height: 50px;
+  border: none;
+  padding: 0 20px;
+  margin-left: 15px;
+  cursor: pointer;
 }
