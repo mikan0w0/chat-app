@@ -19,6 +19,6 @@ RSpec.describe "チャットルームの削除機能", type: :system do
       find_link("チャットを終了する", href: room_path(@room_user.room)).click
     }.to change {@room_user.room.messages.count}.by(-5)
     # トップページに遷移していることを確認する
-    expect(current_path).to eq
+    expect(current_path).to eq root_path
   end
 end
